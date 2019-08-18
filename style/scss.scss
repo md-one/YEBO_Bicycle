@@ -91,7 +91,7 @@ article {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     overflow-x: hidden;
 
     div {
@@ -208,7 +208,7 @@ article {
 
         &:hover {
             span {
-                display: block;
+                display: flex;
             }
         }
     }
@@ -293,6 +293,14 @@ article {
         width: 100%;
         z-index: 2;
         display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
 
